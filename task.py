@@ -118,3 +118,7 @@ df.to_csv('frequency.csv')
 
 print(time.time()-start_time)
 
+
+#memory calculation
+import os, psutil; print(psutil.Process(os.getpid()).memory_info().rss / 1024 ** 2)
+
